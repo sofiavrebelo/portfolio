@@ -1,11 +1,78 @@
+:root{
+  --primary: rgb(234, 56, 56);
+  --spacing: 4rem;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 5vw;
+  line-height: 1.4em;
+  /* base font size: 16px */
+   margin-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin-top: var(--spacing);
+}
+
+p {
+  line-height: 1.4em;
+  /*0.4 bigger then 100% wich is 16px */
+  margin-bottom: 1em;
+}
+
+.button {
+  color: var(--primary);
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.button:hover {
+  background-color: white;
+  background-color: var(--primary);
+}
+
+
+.about {
+  background-color: var(--primary);
+  color: white;
+  padding: var(--spacing);
+}
+
+.about-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .about-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    }
+  }
+  .about.text {
+    margin-left: var(--spacing);
+  }
+}
+
+.about-img {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto var(--spacing);
+}
