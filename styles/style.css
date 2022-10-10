@@ -1,4 +1,4 @@
-:root{
+:root {
   --primary: rgb(234, 56, 56);
   --spacing: 4rem;
 }
@@ -20,7 +20,7 @@ h1 {
   font-size: 5vw;
   line-height: 1.4em;
   /* base font size: 16px */
-   margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -37,18 +37,20 @@ p {
 }
 
 .button {
-  color: var(--primary);
-  font-weight: bold;
-  border: 2px solid var(--primary);
-  text-decoration: none;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   padding: 1rem;
+  border: 2px solid var(--button-color);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--button-color);
 }
 
 .button:hover {
-  background-color: white;
-  background-color: var(--primary);
+  color: var(--button-hover-color);
+  background-color: var(--button-color);
 }
-
 
 .about {
   background-color: var(--primary);
@@ -68,6 +70,18 @@ p {
   .about.text {
     margin-left: var(--spacing);
   }
+
+  article {
+    flex-direction: row;
+    max-width: 960px;
+    margin: 0 auto var(--spacing);
+  }
+
+  article-img {
+    margin-left: 2rem;
+    max-width: 350px;
+    object-fit: cover;
+  }
 }
 
 .about-img {
@@ -75,4 +89,21 @@ p {
   width: 100%;
   max-width: 350px;
   margin: 0 auto var(--spacing);
+}
+
+.neutral-theme {
+  background-color: white;
+  --button-color: var(--primary);
+  --button-hover-color: white;
+}
+
+.primary-theme {
+  color: white;
+  background-color: var(--primary);
+  --button-color: white;
+  --button-hover-color: var(--primary);
+}
+
+.contact {
+  text-align: center;
 }

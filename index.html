@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
+    <header class="neutral-theme">
       <h1>Hello! My name is <span>Sofia Rebelo</span>. I'm a Web Developer</h1>
       <a class="button" href="#about">Find out more</a>
     </header>
     <main>
-      <section class="about" id="about">
+      <section class="about primary-theme" id="about">
         <h2>About Me</h2>
         <div class="about-container">
           <img
@@ -22,13 +22,14 @@
             alt=""
             class="about-img"
           />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
-            rem voluptatibus ducimus tenetur cumque dolore neque molestiae harum
-            commodi, et nam fuga corrupti quod, delectus fugiat. Expedita beatae
-            quo ipsam?
-          </p>
-          <a href="">My Resume</a>
+          <div class="about text">
+            <p>Welcome to my porfolio.</p>
+            <p>My name is Sofia and I'm a Designer & Developer.</p>
+            <p>
+              I'm a front-end developer student with an art & design background.
+            </p>
+            <a href="" class="button">My Resume</a>
+          </div>
         </div>
         <blockquote>
           "Success is not final, failure is not fatal: it is the courage to
@@ -75,21 +76,25 @@
           <img src="./images/project1.webp" alt="project" width="600" />
         </article>
       </section>
-      <section class="contact">
+      <section class="contact primary-theme">
         <h2>Contact</h2>
         <p>If you'd like to work with me, you can drop me a message!</p>
-        <a href="mailto:sofiavrebelo@gmail.com">Let's Talk</a>
+        <a href="mailto:sofiavrebelo@gmail.com" class="button">Let's Talk</a>
       </section>
     </main>
     <footer>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/sofia-rebelo-24509a27/"
+      <ul class="social">
+        <li class="social-item">
+          <a
+            class="social-link linkedin"
+            href="https://www.linkedin.com/in/sofia-rebelo-24509a27/"
             >LinkedIn</a
           >
         </li>
-        <li>
-          <a href="https://github.com/sofiavrebelo">GitHub</a>
+        <li class="social-item">
+          <a class="social-link github" href="https://github.com/sofiavrebelo"
+            >GitHub</a
+          >
         </li>
       </ul>
       <p>&copy; 2021 - Portfolio design by Sofia Rebelo</p>
