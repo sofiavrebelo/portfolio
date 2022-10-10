@@ -50,6 +50,7 @@ p {
 .button:hover {
   color: var(--button-hover-color);
   background-color: var(--button-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .about {
@@ -106,4 +107,54 @@ p {
 
 .contact {
   text-align: center;
+}
+
+.footer {
+  padding: var(--spacing);
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing);
+}
+
+.social-item {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 1rem;
+}
+
+.social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 0px;
+  background: no-repeat;
+  background-size: 30px;
+}
+
+.linkedin {
+  background-image: url(../images/icon-linkedin.png);
+}
+
+.github {
+  background-image: url(../images/icon-github.png);
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.class::before {
+  content: ;
+}
+
+.class::after {
+  content: ;
 }
