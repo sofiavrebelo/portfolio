@@ -1,6 +1,9 @@
 :root {
-  --primary: rgb(234, 56, 56);
+  --primary: rgb(244, 64, 64);
+  --dk-grey: #333;
+  --max-width: 960px;
   --spacing: 4rem;
+  --img-width: 350px;
 }
 
 body {
@@ -17,10 +20,11 @@ header {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: clamp(3rem, 5vw, 200rem);
+  font-weight: bold;
   line-height: 1.4em;
   /* base font size: 16px */
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing);
 }
 
 h2 {
@@ -30,10 +34,32 @@ h2 {
   margin-top: var(--spacing);
 }
 
+h3 {
+  font-size: 1.5vw;
+}
+
 p {
   line-height: 1.4em;
   /*0.4 bigger then 100% wich is 16px */
   margin-bottom: 1em;
+}
+
+blockquote {
+  text-align: center;
+  font-size: 25px;
+}
+
+cite {
+  text-align: center;
+  display: block;
+}
+
+footer {
+  background-color: var(--dk-grey);
+}
+
+.primary-color {
+  color: var(--primary);
 }
 
 .button {
@@ -54,9 +80,22 @@ p {
 }
 
 .about {
+  position: relative;
+  margin-bottom: 100px;
   background-color: var(--primary);
   color: white;
   padding: var(--spacing);
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid var(--primary);
+  border-right: 100vw solid transparent;
 }
 
 .about-container {
@@ -109,6 +148,17 @@ p {
   text-align: center;
 }
 
+.contact::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -100px;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid var(--primary);
+  border-left: 100vw solid transparent;
+}
+
 .footer {
   padding: var(--spacing);
   text-align: center;
@@ -151,10 +201,23 @@ p {
   transition: transform 0.3s ease-in-out;
 }
 
-.class::before {
-  content: ;
+.header-link::after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: 1rem;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-top: 0.75rem solid var(--primary);
 }
 
-.class::after {
-  content: ;
+.header-link:hover::after {
+  border-top-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
