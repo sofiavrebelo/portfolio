@@ -268,3 +268,19 @@ footer {
   color: var(--primary);
   text-align: center;
 }
+
+.text-link {
+  color: rgb(102, 234, 249);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.text-link:visited {
+  color: rgb(13, 70, 163);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
