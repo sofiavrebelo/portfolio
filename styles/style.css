@@ -45,6 +45,7 @@ p {
   line-height: 1.4em;
   font-size: 1.3rem;
   margin-bottom: 1.5em;
+  text-align: justify;
 }
 
 section {
@@ -130,6 +131,8 @@ footer {
     width: 100%;
     max-width: 350px;
     margin: 0 auto var(--spacing);
+    object-fit: cover;
+    filter: grayscale();
   }
 
   .article-layout {
@@ -139,9 +142,19 @@ footer {
   }
 
   .article-img {
-    margin-left: 2rem;
+    margin-left: 3rem;
     max-width: 350px;
-    object-fit: cover;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-img {
+    max-width: 75vw;
+  }
+
+  .article-img {
+    display: none;
   }
 }
 
@@ -249,4 +262,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.portfolio-design {
+  color: var(--primary);
+  text-align: center;
 }
