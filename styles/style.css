@@ -1,9 +1,7 @@
 :root {
   --primary: #2ba796;
-  --dk-grey: rgb(71, 70, 70);
-  --max-width: 960px;
+  --dk-grey: rgb(49, 48, 48);
   --spacing: 4rem;
-  --img-width: 350px;
 }
 
 body {
@@ -24,7 +22,6 @@ h1 {
   font-size: clamp(3rem, 5vw, 200rem);
   font-weight: bold;
   line-height: 1.4em;
-  /* base font size: 16px */
   margin-bottom: var(--spacing);
   color: var(--dk-grey);
 }
@@ -295,4 +292,35 @@ footer {
   border: 2px solid white;
   font-weight: bold;
   text-decoration: none;
+}
+
+.nav-button:hover {
+  color: var(--primary);
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.dark-theme .neutral-theme {
+  background-color: var(--dk-grey);
+}
+
+.dark-theme .about::after {
+  border-right: 100vw solid var(--dk-grey);
+}
+
+.dark-theme h1 {
+  color: white;
+}
+
+.dark-theme h2 {
+  color: white;
+}
+
+.dark-theme h3 {
+  color: white;
+}
+
+.dark-theme p {
+  color: white;
 }
