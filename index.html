@@ -14,6 +14,13 @@
     <link rel="icon" href="favicon-S.png" type="image/x-icon" />
   </head>
   <body>
+    <div class="header-nav">
+      <nav>
+        <a href="#projects" class="nav-links">Projects</a></li>
+        <a href="#contacts" class="nav-links">Contacts</a></li>
+      </nav>
+      <button class="nav-button">Change Theme</button>
+    </div>
     <header class="neutral-theme">
       <h1>
         Hi, I'm <span class="primary-color">Sofia Rebelo</span><br />
@@ -32,21 +39,15 @@
           />
           <div class="about-text">
             <p>
-              Hello! My name is Sofia Rebelo, I’m a graphic designer and a (soon
-              to be) front-end developer, from Portugal.
+              Hello! My name is Sofia Rebelo, I am a graphic designer and a
+              (soon to be) front-end developer, from Portugal.
             </p>
             <p>
               Since the beginning of my career journey as a freelance designer,
               I felt I was lacking the skills that could bring me to the next
               level. My interest in programming, lead me to the amazing
-              <a
-                href="https://frontendfoxes.school/"
-                target="_blank"
-                class="text-link"
-                >Front-end Foxes School</a
-              >
-              where I’m learning the basics of web development with JavaScript,
-              HTML, CSS and GitHub.
+              Front-end Foxes School where I am learning the basics of web
+              development with JavaScript, HTML, CSS and GitHub.
             </p>
             <p>
               I value simple content structure, beautiful layouts, intuitive and
@@ -68,7 +69,7 @@
         </blockquote>
         <cite>Winston Churchill</cite>
       </section>
-      <section class="projects neutral-theme">
+      <section class="projects neutral-theme" id="projects">
         <h2>Projects</h2>
         <article class="article-layout">
           <div>
@@ -129,7 +130,7 @@
           />
         </article>
       </section>
-      <section class="contact primary-theme">
+      <section class="contact primary-theme" id="contact">
         <h2>Contact</h2>
         <p class="contact">
           If you'd like to work with me, you can drop me a message!
@@ -164,3 +165,4 @@
     </footer>
   </body>
 </html>
+<script src="script.js"></script>

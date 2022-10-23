@@ -269,18 +269,30 @@ footer {
   text-align: center;
 }
 
-.text-link {
-  color: rgb(102, 234, 249);
-  background-color: transparent;
-  text-decoration: none;
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  background-color: var(--primary);
+  padding: 0 35px;
 }
 
-.text-link:visited {
-  color: rgb(13, 70, 163);
-  background-color: transparent;
+.nav-links {
+  color: white;
+  font-size: 1.3rem;
   text-decoration: none;
+  padding-right: 25px;
 }
 
-.text-link:hover {
-  text-decoration: underline;
+.nav-button {
+  color: white;
+  background-color: var(--primary);
+  display: inline-block;
+  width: max-content;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 2px solid white;
+  font-weight: bold;
+  text-decoration: none;
 }
